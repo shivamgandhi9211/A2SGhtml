@@ -1,0 +1,141 @@
+@import url(./reset.css);
+
+/* Layout Visualization Helpers */
+body {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    
+}
+
+
+
+/* Defaults */
+h1 { 
+    
+    font-size: 3.4em;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+h2 {text-align:center;
+     font-size: 2.1em }
+
+p {text-align: center;
+    font-size: 1.2em;
+    line-height: 1.4em;
+    margin: 0.5em 0;
+}
+
+a {
+    color: #007bff;
+}
+
+a:hover {
+    color: #005bbc;
+}
+
+/* USING FLEXBOX */
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+/* Header Nav */
+.container {
+    display: flex;
+    align-items: left; 
+   }
+   
+img {
+     max-width: 100%;
+     max-height:70%;
+      
+   }
+header > div > nav {
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items:flex-start;
+}
+
+header > div > nav > ul{
+    display:flex;
+}
+
+header > div > nav > ul > li > a {
+    display: block;
+    align-items:center;
+    justify-items:center;
+    width: 60px;
+    height: 40px;
+}
+
+.header-image {
+    display: flex;
+    padding-right:60%;
+  }
+
+.right-image{
+    display: flex;
+    padding-left: 60%;
+    
+    
+   
+}
+
+  
+
+
+li{
+    list-style: none;
+
+}
+header > nav > ul > li > a:hover {
+    background-color: #8cc7ff;
+}
+
+/* Header H1 */
+header > h1 {
+    margin: 1em 0;
+    
+}
+
+.center {
+    position: absolute;
+    top: 35%;
+    left:45%;
+}
+
+/* Main/Aside Layout */
+.content {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+main {
+    width: 70%;
+    order: 2;
+}
+
+aside {
+    width: 35%;
+    order: 1;
+}
+
+/* Footer */
+footer {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
